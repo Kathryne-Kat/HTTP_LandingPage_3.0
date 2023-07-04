@@ -899,6 +899,12 @@ address {
   padding: 20px;
   border-radius: 10px;
   margin-right: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.7027544294084822) 68%,
+    rgba(14, 14, 44, 1) 100%
+  );
 }
 @media screen and (max-width: 480px) {
   .reviews-item-coment {
@@ -986,6 +992,10 @@ address {
   .swiper-button-next {
     display: none;
   }
+}
+.swiper-scrollbar {
+  background-color: var(--accent-text-color2);
+  color: var(--accent-text-color2);
 }
 /*--------end-------*/
 .container.end {
