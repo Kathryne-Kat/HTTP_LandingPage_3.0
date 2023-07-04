@@ -127,24 +127,24 @@ address {
   }
 }
 .hero-img {
-  width: 550px;
+  width: 480px;
 }
 
 @media screen and (max-width: 1200px) {
   .hero-img {
-    width: 340px;
+    width: 420px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-img {
     /* width: 100%; */
-    width: 220px;
+    width: 280px;
     height: auto;
   }
 }
 @media screen and (max-width: 480px) {
   .hero-img {
-    /* width: 250px; */
+    width: 220px;
   }
 }
 .hero-name {
@@ -182,6 +182,7 @@ address {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  text-transform: uppercase;
   /* padding: 8px 20px 7px 20px; */
   /*border-top: 4px solid;
   border-left: 4px solid;
@@ -222,7 +223,7 @@ address {
   border: 4px solid #c44737;
   box-sizing: border-box;
 } */
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .four h1 {
     font-size: 36px;
   }
@@ -232,11 +233,11 @@ address {
     top: -20px;
     left: -20px;
   }
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .hero-title {
-    font-size: 44px;
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -245,6 +246,11 @@ address {
     font-size: 38px;
     margin-bottom: 15px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
   }
 }
 
@@ -258,11 +264,11 @@ address {
 }
 @media screen and (max-width: 1200px) {
   .section-title-h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .hero-title-h2 {
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -272,7 +278,7 @@ address {
     margin-bottom: 20px;
   }
   .hero-title-h2 {
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 }
@@ -316,7 +322,13 @@ address {
   outline: none;
   border: none;
   border-radius: 10px;
-  background: rgb(210, 61, 74);
+  /* background: rgb(210, 61, 74); */
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    145deg,
+    rgba(14, 14, 44, 1) 0%,
+    rgba(210, 61, 74, 1) 90%
+  );
   box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
     inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
   -webkit-animation: pulsate 1.2s linear infinite;
@@ -449,6 +461,15 @@ address {
 
 .achievement-item {
   flex-basis: calc((100% - 90px) / 4);
+  /* border: 1px solid var(--accent-color); */
+  border-radius: 10px;
+  padding-bottom: 15px;
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    145deg,
+    rgba(14, 14, 44, 1) 68%,
+    rgba(210, 61, 74, 1) 100%
+  );
 }
 @media screen and (max-width: 768px) {
   .achievement-item {
@@ -472,6 +493,8 @@ address {
 }
 .achievement-title-accent {
   color: var(--accent-text-color);
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    2 10px 20px 5px rgba(0, 0, 0, 0.05), 3 -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 .achievement-text {
   font-size: 18px;
@@ -500,6 +523,12 @@ address {
   box-shadow: 4px 10px 20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 10px;
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    145deg,
+    rgba(14, 14, 44, 1) 68%,
+    rgba(210, 61, 74, 1) 100%
+  );
 }
 .work-item.yellow {
   border: 1px solid var(--accent-color2);
@@ -582,6 +611,12 @@ address {
   box-shadow: 4px 10px 20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 20px;
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    330deg,
+    rgba(14, 14, 44, 1) 68%,
+    rgba(210, 61, 74, 1) 100%
+  );
 }
 @media screen and (max-width: 768px) {
   .order-form {
@@ -609,6 +644,7 @@ address {
   margin: 0 auto;
   margin-bottom: 30px;
   padding-left: 10px;
+  background-color: #ffffff5a;
   border: 1px solid var(--accent-text-color2);
   border-radius: 10px;
   outline: transparent;
@@ -677,6 +713,12 @@ address {
   max-width: 270px;
   padding: 10px;
   border: 1px solid var(--accent-color);
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    145deg,
+    rgba(14, 14, 44, 1) 68%,
+    rgba(210, 61, 74, 1) 100%
+  );
   border-radius: 10px;
   box-shadow: 4px 10px 20px 4px rgba(0, 0, 0, 0.25);
   /* box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
@@ -723,6 +765,12 @@ address {
   width: 200px;
   height: 100px;
   border: 1px solid var(--accent-color);
+  background: rgb(14, 14, 44);
+  background: linear-gradient(
+    330deg,
+    rgba(14, 14, 44, 1) 68%,
+    rgba(210, 61, 74, 1) 100%
+  );
   box-shadow: 4px 10px 20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border-radius: 4px;
@@ -748,7 +796,28 @@ address {
   transition: border-color var(--time) var(--cubic),
     color var(--time) var(--cubic);
 }
+/* .marquee2 ul {
+  display: flex;
+  color: #fff;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #7c70b1, 0px 0px 10px #7c70b1, 0px 0px 10px #7c70b1,
+    0px 0px 20px #7c70b1;
+}
+.marquee2 ul:hover {
+  animation-play-state: paused;
+}
 
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+} */
 /*-------reviews----*/
 
 .reviews-container {
@@ -847,6 +916,7 @@ address {
 }
 
 .reviews-item-title {
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -861,6 +931,7 @@ address {
 }
 
 .reviews-item-text {
+  color: #000000;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
