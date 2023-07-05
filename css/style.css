@@ -10,6 +10,7 @@
   --color-input: rgba(33, 33, 33, 0.2);
   --time: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  /* --animate-delay: 5s; */
 }
 
 /*приховує непотрібні заголовки*/
