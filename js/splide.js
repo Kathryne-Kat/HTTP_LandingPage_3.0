@@ -3,7 +3,7 @@ new Splide(".splide", {
   type: "loop",
   drag: "free",
   focus: "center",
-  perPage: 3,
+  perPage: 2,
   autoScroll: {
     speed: 1,
   },
