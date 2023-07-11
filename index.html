@@ -35,6 +35,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link
+      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -232,39 +237,6 @@
         </div>
       </section>
 
-      <section class="section order" id="orders">
-        <div class="container order">
-          <div class="order-title">
-            <h3 class="section-title order-name">ЗВ’ЯЖИСЯ З НАМИ</h3>
-            <h2 class="section-title-h2">
-              Залишай заявку та отримай вичерпну <span>консультацію</span>
-            </h2>
-          </div>
-          <div class="order-form">
-            <h3 class="order-title-form">Заявка на консультацію</h3>
-            <form action="#">
-              <input class="order-input" type="text" placeholder="Ваше ім’я" />
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                class="order-input tel"
-                placeholder="Ваш телефон"
-                aria-label="телефон"
-              />
-              <input
-                class="order-input"
-                type="text"
-                placeholder="Ваш сайт / бізнес"
-              />
-              <button class="button-hero order-btn" type="button">
-                Залишити заявку
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
       <section class="section reviews">
         <div class="container reviews">
           <h3 class="section-title reviews-name">ВІДГУКИ НАШИХ КЛІЄНТІВ</h3>
@@ -419,6 +391,39 @@
         </div>
       </section>
 
+      <section class="section order" id="orders">
+        <div class="container order">
+          <div class="order-title">
+            <h3 class="section-title order-name">ЗВ’ЯЖИСЯ З НАМИ</h3>
+            <h2 class="section-title-h2">
+              Залишай заявку та отримай вичерпну <span>консультацію</span>
+            </h2>
+          </div>
+          <div class="order-form">
+            <h3 class="order-title-form">Заявка на консультацію</h3>
+            <form action="#">
+              <input class="order-input" type="text" placeholder="Ваше ім’я" />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="order-input tel"
+                placeholder="Ваш телефон"
+                aria-label="телефон"
+              />
+              <input
+                class="order-input"
+                type="text"
+                placeholder="Ваш сайт / бізнес"
+              />
+              <button class="button-hero order-btn" type="button">
+                Залишити заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section class="section plan">
         <div class="container plan">
           <div class="plan-title-container">
@@ -505,64 +510,176 @@
         <div class="container clients">
           <p class="section-title clients-name">НАШІ КЛІЄНТИ</p>
           <!-- <div class="swiper swiper-clients"> -->
-          <ul class="clients-list list">
-            <li
-              class="element clients animate__animated animate__zoomIn animate__delay-5s 5"
-            >
-              <a class="clients-item" href="#">
-                <img
-                  class="logo-clients"
-                  src="./images/cl8.png"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li
-              class="element clients animate__animated animate__zoomIn animate__delay-5s 5"
-            >
-              <a class="clients-item" href="#">
-                <img
-                  class="logo-clients"
-                  src="./images/cl3.png"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li
-              class="element clients animate__animated animate__zoomIn animate__delay-5s 5"
-            >
-              <a class="clients-item" href="#">
-                <img
-                  class="logo-clients"
-                  src="./images/cl4.png"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li
-              class="element clients animate__animated animate__zoomIn animate__delay-5s 5"
-            >
-              <a class="clients-item" href="#">
-                <img
-                  class="logo-clients"
-                  src="./images/cl5.png"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li
-              class="element clients animate__animated animate__zoomIn animate__delay-5s 5"
-            >
-              <a class="clients-item" href="#">
-                <img
-                  class="logo-clients"
-                  src="./images/cl6.png"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-          </ul>
+
           <!-- </div> -->
+        </div>
+        <div class="splide">
+          <div class="splide__track" id="splide-track">
+            <ul class="clients-list list splide__list marquee2">
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo1.jpg"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo2.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo3.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo4.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo5.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo6.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo7.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo8.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo9.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo10.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo11.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo12.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo13.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo14.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo15.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo16.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo17.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+              <li class="element clients splide__slide">
+                <a class="clients-item" href="#">
+                  <img
+                    class="logo-clients"
+                    src="./images/logo/logo18.png"
+                    alt="логотип"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -647,8 +764,12 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
     <script src="./js/valid.js" type="module"></script>
     <script src="./js/script.js" type="module"></script>
     <script src="./js/buttom.js" type="module"></script>
+    <script src="./js/splide.js" type="module"></script>
   </body>
 </html>

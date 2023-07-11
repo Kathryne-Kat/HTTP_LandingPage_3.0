@@ -421,7 +421,7 @@ address {
   color: #fff;
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
   color: #fdfdfe;
   text-transform: uppercase;
   text-shadow: 0px 0px 5px #7c70b1, 0px 0px 10px #7c70b1, 0px 0px 10px #7c70b1,
@@ -485,8 +485,7 @@ address {
 /*--------achievement-------*/
 
 .achievement-list,
-.work-list,
-.clients-list {
+.work-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -814,8 +813,12 @@ input.reg::placeholder {
 .clients-name {
   width: 200px;
 }
+.clients-list {
+  /* flex-wrap: nowrap; */
+}
 .element.clients {
   flex-basis: calc((100% - 150px) / 5);
+  margin-left: 10px;
 }
 @media screen and (max-width: 480px) {
   .element.clients {
@@ -829,6 +832,7 @@ input.reg::placeholder {
   align-items: center;
   width: 200px;
   height: 100px;
+  padding: 5px;
   border: 1px solid var(--accent-color);
   background: rgb(14, 14, 44);
   background: linear-gradient(
@@ -847,7 +851,9 @@ input.reg::placeholder {
   }
 }
 .logo-clients {
-  width: 190px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .logo-clients {
@@ -861,6 +867,38 @@ input.reg::placeholder {
   transition: border-color var(--time) var(--cubic),
     color var(--time) var(--cubic);
 }
+
+/* .marquee2 {
+  background-color: var(--accent-color3);
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.marquee2 li {
+  color: #fff;
+
+  animation: marquee 10s linear infinite;
+  color: #fdfdfe;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #7c70b1, 0px 0px 10px #7c70b1, 0px 0px 10px #7c70b1,
+    0px 0px 20px #7c70b1;
+}
+
+.marquee2 li:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+} */
+
 /* .marquee2 ul {
   display: flex;
   color: #fff;
@@ -1130,13 +1168,13 @@ input.reg::placeholder {
 }
 .logo-wrapper-footer {
   display: block;
-  width: 150px;
-  height: 60px;
+  width: 173px;
+  height: 70px;
   border-radius: 10px;
   box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .logo-footer {
-  height: 60px;
+  height: 70px;
   border-radius: 10px;
   position: relative;
   z-index: -2;
